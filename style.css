@@ -1,27 +1,49 @@
 html {
-    height: 1080px;
-    width: 1920px;
-    background-color: #f7f7f7;
+    background-color: #ffdfb3;
 }
 h3{
     display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: left;
-    height: 60px;
-      background-color: #ffdfb3 ;
+      background-color: #a5cfa8;
+    height: 40px;
 
-}
-h4{
-    font-size: 30px;
 }
 h1{
     font-size: 35px;
 }
-p2{
+.intro {
+     display: grid;
+     align-items: center; 
+     grid-template-columns: 1fr 1fr;
+     column-gap: 5px;
+}
+.coolphoto{
+    
+}
+.introblurb{
+    font-size: 40px;
+    width: 700px; 
+    height: 600px;
+     background-color: #292929;
+       color: #fad1ff;
 }
 
-.instagram {
-    height: 100px;
-    width: 192px;
+
+.menuname{
+    text-align: center;
+    font-size: 40px;
+}
+
+.menu {
+     display: grid;
+      align-items: center; 
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 5px;
+     background-color: #f7f3ed;
+}
+button {
+    border-color: transparent;
+    background-color: transparent;
 }
