@@ -1,7 +1,17 @@
+@font-face {
+    font-family: chalk;
+    src: url(fonts/blzee.ttf);
+}
+@font-face{
+    font-family: graffiti;
+    src: url(fonts/graffiti.ttf);
+}
+
 html {
     background-color: #ffdfb3;
 }
 h3{
+    font-family: ;
     display: flex;
       flex-direction: column;
       justify-content: center;
@@ -24,16 +34,18 @@ h1{
 }
 .introblurb{
     font-size: 40px;
+    font-family: chalk;
     width: 700px; 
     height: 600px;
      background-color: #292929;
-       color: #fad1ff;
+       color: #dedede;
 }
 
 
 .menuname{
+    font-family: graffiti;
     text-align: center;
-    font-size: 40px;
+    font-size: 70px;
 }
 
 .menu {

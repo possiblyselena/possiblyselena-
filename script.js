@@ -12,7 +12,7 @@ function lavenderlatte(){
 }
 function yuzutea(){
   document.getElementById("creations").innerHTML = " ";
-    document.getElementById("creations").innerHTML = "yuzu tea";
+    document.getElementById("creations").innerHTML = "sick playlists";
   document.getElementById("description").innerHTML = " ";
     document.getElementById("description").innerHTML = "there should be a decription about my youtube here"
 }
