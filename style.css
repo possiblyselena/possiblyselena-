@@ -7,8 +7,13 @@
     src: url(fonts/graffiti.ttf);
 }
 
+@font-face {
+    font-family: write;
+    src: url(fonts/BabyDoll.ttf);
+}
+
 html {
-    background-color: #ffdfb3;
+    background-color: #e1debc;
 }
 h3{
     font-family: ;
@@ -17,11 +22,18 @@ h3{
       justify-content: center;
       align-items: left;
       background-color: #a5cfa8;
-    height: 40px;
+    height: 60px;
 
 }
 h1{
-    font-size: 35px;
+    font-size: 60px;
+    font-family: write;
+}
+.header{
+    display: grid;
+     align-items: left; 
+     grid-template-columns:1fr 1fr;
+column-gap: 1px  
 }
 .intro {
      display: grid;
@@ -30,32 +42,57 @@ h1{
      column-gap: 5px;
 }
 .coolphoto{
-    
+   
 }
 .introblurb{
-    font-size: 40px;
-    font-family: chalk;
+    font-size: 52px;
+    font-family: write;
     width: 700px; 
     height: 600px;
+    border-radius: 25px;
      background-color: #292929;
-       color: #dedede;
+    color: #dedede;
 }
 
 
 .menuname{
-    font-family: graffiti;
+    font-family: write;
     text-align: center;
     font-size: 70px;
 }
-
+h2{
+    font-family: write;
+}
 .menu {
      display: grid;
       align-items: center; 
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: auto auto auto;
       column-gap: 5px;
      background-color: #f7f3ed;
 }
+.menu > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.polaroid {
+    display: grid;
+      align-items: center; 
+      grid-template-columns: auto auto;
+      column-gap: 5px;
+     background-color: #f7f3ed;
+}
+.polaroid > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 button {
     border-color: transparent;
     background-color: transparent;
+}
+h5{
+    font-size: 25px;
+    font-family: write;
 }
