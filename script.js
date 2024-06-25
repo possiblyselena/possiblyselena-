@@ -1,20 +1,20 @@
-function icecoffee(){
+function cookies(){
   document.getElementById("creations").innerHTML = " ";
-    document.getElementById("creations").innerHTML = "ice coffee";
+    document.getElementById("creations").innerHTML = "cookies";
   document.getElementById("description").innerHTML = " ";
-    document.getElementById("description").innerHTML = "there should be a decription about my instagram here";
+    document.getElementById("description").innerHTML = "insert recipe here";
 }
-function lavenderlatte(){
+function brownies(){
   document.getElementById("creations").innerHTML = " ";
-    document.getElementById("creations").innerHTML = "lavender lattes";
+    document.getElementById("creations").innerHTML = "brownies";
   document.getElementById("description").innerHTML = " ";
-    document.getElementById("description").innerHTML = "there should be a decription about my linkedin here"
+    document.getElementById("description").innerHTML = "insert recipe here"
 }
-function yuzutea(){
+function cakes(){
   document.getElementById("creations").innerHTML = " ";
-    document.getElementById("creations").innerHTML = "sick playlists";
+    document.getElementById("creations").innerHTML = "cakes";
   document.getElementById("description").innerHTML = " ";
-    document.getElementById("description").innerHTML = "there should be a decription about my youtube here"
+    document.getElementById("description").innerHTML = "insert recipe here";
 }
 function rosetea(){
   document.getElementById("creations").innerHTML = " ";

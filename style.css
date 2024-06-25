@@ -23,8 +23,8 @@ h3{
       align-items: left;
       background-color: #a5cfa8;
     height: 60px;
-
 }
+
 h1{
     font-size: 60px;
     font-family: write;
@@ -47,8 +47,6 @@ column-gap: 1px
 .introblurb{
     font-size: 52px;
     font-family: write;
-    width: 700px; 
-    height: 600px;
     border-radius: 25px;
      background-color: #292929;
     color: #dedede;
