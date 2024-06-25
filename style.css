@@ -41,15 +41,17 @@ column-gap: 1px
      grid-template-columns: 1fr 1fr;
      column-gap: 5px;
 }
-.coolphoto{
+.name{
    
 }
 .introblurb{
     font-size: 52px;
+    line-height: 1.8;
     font-family: write;
     border-radius: 25px;
      background-color: #292929;
     color: #dedede;
+    height:500px;
 }
 
 
@@ -65,7 +67,7 @@ h2{
      display: grid;
       align-items: center; 
       grid-template-columns: auto auto auto;
-      column-gap: 5px;
+      column-gap: 200px;
      background-color: #f7f3ed;
 }
 .menu > div {
