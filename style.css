@@ -16,7 +16,7 @@ html {
     background-color: #e1debc;
 }
 h3{
-    font-family: ;
+    font-family: write;
     display: flex;
       flex-direction: column;
       justify-content: center;
@@ -24,7 +24,9 @@ h3{
       background-color: #a5cfa8;
     height: 60px;
 }
-
+p3{
+    font-family: write;
+}
 h1{
     font-size: 60px;
     font-family: write;
