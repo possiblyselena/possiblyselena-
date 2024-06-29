@@ -1,3 +1,39 @@
+let p = 0;
+if (p == 0){
+}
+
+function vietnam(){
+  p = 0;
+  p = 0 + 1;
+  var vietnam = document.getElementById("vietnamblurb");
+   vietnam.style.display = 'block';
+  document.getElementById("facttext").innerHTML = " ";
+  document.getElementById("facttext").innerHTML = "cookies";
+}
+function robotics(){
+  p = 0;
+  p = 0 + 1;
+  var robotics = document.getElementById("roboticsblurb");
+   robotics.style.display = 'block';
+  document.getElementById("facttext").innerHTML = " ";
+  document.getElementById("facttext").innerHTML = "cookies";
+}
+function piano(){
+  p = 0;
+  p = 0 + 1;
+  var piano = document.getElementById("pianoblurb");
+   piano.style.display = 'block';
+  document.getElementById("facttext").innerHTML = " ";
+  document.getElementById("facttext").innerHTML = "cookies";
+}
+function matcha(){
+  p = 0;
+  p = 0 + 1;
+  var matcha = document.getElementById("matchablurb");
+   matcha.style.display = 'block';
+  document.getElementById("facttext").innerHTML = " ";
+  document.getElementById("facttext").innerHTML = "cookies";
+}
 function cookies(){
   document.getElementById("creations").innerHTML = " ";
     document.getElementById("creations").innerHTML = "cookies";

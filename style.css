@@ -55,8 +55,6 @@ column-gap: 1px
     color: #dedede;
     height:500px;
 }
-
-
 .menuname{
     font-family: write;
     text-align: center;
@@ -90,6 +88,10 @@ h2{
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
+.information{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
 button {
     border-color: transparent;
     background-color: transparent;
