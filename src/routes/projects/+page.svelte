@@ -60,8 +60,6 @@
     });
 </script>
 
-<p>This page displays more of what I've built, or should automatically show the starred stuff on my github</p>
-
 <h2 class="font-creato text-5xl ">Recent Commits</h2>
 <ul>
     {#each commits as commit}
