@@ -1,11 +1,52 @@
 <script>
-    import Navbar from '../components/navbar.svelte';
-    import Footbar from '../components/footbar.svelte';
+
 </script>
 
-<Navbar />
-<p>What do I even say about myself?</p>
+<p class="font-amoria text-5xl">What do I even say about myself?</p>
+
+<div>
+    <div>
+        <div>
+            <h2>What I did in the past</h2>
+            <li>Ran 7 hackathons - sponsorships, logistics, marketing</li>
+            <li>Won the Impact Award for my FRC Team</li>
+            <li>Built some things that landed me awards and recognition</li>
+        </div>
+
+        <div>
+            <h2>What I'm doing right now</h2>
+            <li>Living out in Vermont at 18 </li>
+            <li>Taking a gap year at Hack Club</li>
+            <li>Working on personal projects when I have the time</li>
+        </div>
+
+        <div>
+            <h2>What I'm doing in the future</h2>
+            <li>Incoming Computer Engineering @ University of Waterloo</li>
+            <li>Exploring the world</li>
+            <li>Will probably make cookies this week</li>
+        </div>
+    </div>
+    <div>
+        <p>Hover text - should show image context, maybe on a photo strip</p>
+    </div>
+</div>
 
 
-<Footbar />
+<style>
+    a {
+        font-family: 'creato';
+        font-size: 1rem;
+    }
+
+    li {
+        font-family: 'creato';
+        font-size: 1rem;    
+    }
+
+    h2 {
+        font-family: 'creato';
+        font-size: 1.5rem;
+    }
+</style>
 
