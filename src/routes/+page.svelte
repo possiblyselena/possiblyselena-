@@ -1,7 +1,8 @@
 <script>
-
+    import Navbar from './components/navbar.svelte';
 </script>
 
+<Navbar />
 <p>Hello, I'm Selena!</p>
 
 <p>I'm from Hamilton, ON and for the past 3 years, I've been creating projects with tech and travelling to places across North America.</p>

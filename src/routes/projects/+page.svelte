@@ -1,5 +1,7 @@
 <script>
     import { onMount } from 'svelte';
+    import Navbar from '../components/navbar.svelte';
+    import Footbar from '../components/footbar.svelte';
 
     const maxCommitsToDisplay = 5;
     let commits = $state([]);
@@ -40,6 +42,7 @@
     });
 </script>
 
+<Navbar />
 <p>This page displays more of what I've built, or should automatically show the starred stuff on my github</p>
 <p>Recent Commits</p>
 <ul>
@@ -50,3 +53,4 @@
         </li>
     {/each}
 </ul>
+<Footbar />
