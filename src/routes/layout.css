@@ -1,1 +1,13 @@
 @import 'tailwindcss';
+
+@font-face {
+    font-family: 'amoria';
+    src: url('/fonts/AMORIA.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme {
+    --font-amoria: 'amoria', san-serif;
+}

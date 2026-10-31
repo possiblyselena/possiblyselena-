@@ -4,5 +4,8 @@
 </script>
 
 <Navbar />
+<p>What do I even say about myself?</p>
+
+
 <Footbar />
 
