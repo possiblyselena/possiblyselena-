@@ -8,6 +8,16 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'creato';
+    src: url('/fonts/CreatoDisplay-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @theme {
     --font-amoria: 'amoria', san-serif;
+    --font-creato: 'creato', san-serif;
 }
+
