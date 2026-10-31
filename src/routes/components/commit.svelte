@@ -5,7 +5,7 @@
 
     async function getCommit() {
         try {
-            const response = await fetch("https://api.github.com/repos/possiblyselena/possiblyselena/commits/");
+            const response = await fetch("https://api.github.com/repos/possiblyselena/possiblyselena-/commits");
             commitData = (await response.json())[0];
         } catch (error) {
         commitData = {
@@ -21,7 +21,7 @@
 </script>
 
 <div>
-    commit <a href="https://github.com/possiblyselena/possiblyselena/commit/{commitData?.sha}" target="_blank">{commitData?.sha ? commitData.sha.slice(0, 7) : "ratelimited :("}</a>
+    commit <a href="https://github.com/possiblyselena/possiblyselena-/commit{commitData?.sha}" target="_blank">{commitData?.sha ? commitData.sha.slice(0, 7) : "ratelimited :("}</a>
     ! last updated: {
         commitData?.commit
             ? new Date(commitData.commit.author.date).toLocaleDateString(
