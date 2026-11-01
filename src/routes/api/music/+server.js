@@ -24,7 +24,7 @@ export async function GET() {
     }
 
     const token = await getAccessToken();
-    const res = await fetch('https://api.spotify.com/v1/me/top/tracks?time_range=long_term&limit=5', {
+    const res = await fetch('https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=5', {
         headers: {
             'Authorization': `Bearer ${token}`
         }
@@ -36,9 +36,10 @@ export async function GET() {
 
     const data = await res.json();
     return json(
-        data.items.map(({ name, artists }) => ({
+        data.items.map(({ name, artists, external_urls }) => ({
             name,
-            artists: artists.map((artist) => artist.name).join(', ')
+            artists: artists.map((artist) => artist.name).join(', '),
+            url: external_urls.spotify
         }))
     );
 }
