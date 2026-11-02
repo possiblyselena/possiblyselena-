@@ -2,4 +2,4 @@
 
 </script>
 
-<p>despite having 4 different cameras, I still have trouble taking photos. Here's the ones I managed to take.</p>
+<p>These are things I like and mean a lot to me</p>

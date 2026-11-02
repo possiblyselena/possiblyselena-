@@ -42,7 +42,7 @@
 
         {
             text: "I want to make my own art - music, paintings, and clothing",
-            images: ["/aboutme/polaris.JPG", "/aboutme/sleepover.PNG", "/aboutme/hackathon3.jpg"]
+            images: ["/aboutme/polaris.JPG", "/aboutme/sleepover.PNG", "/aboutme/zuko.jpg"]
         },
 
         {
@@ -60,10 +60,10 @@
 
 </script>
 
-<p class="font-amoria text-5xl">What do I even say about myself?</p>
+<p class="font-amoria text-5xl mx-2">What do I even say about myself?</p>
 
-<div class="flex">
-    <div class="my-5">
+<div class="flex m-4">
+    <div class="mx-10">
         <div class="past">
             <h2>What I did in the past</h2>
             {#each pastInfo as info}
@@ -85,9 +85,9 @@
             {/each}
         </div>
     </div>
-    <div>
+    <div  class="grid grid-cols-2 mx-30 gap-x-20 gap-y-6">
         {#each activeBullet.images as image}
-            <img src={image} class="bg-white p-3 shadow-xl" alt="Description of image"/>
+            <img src={image} class="bg-white p-3 shadow-xl even:translate-y-30" alt="Description of image"/>
         {/each}
     </div>
 </div>
@@ -98,7 +98,11 @@
     li {
         font-family: 'creato';
         font-size: 1rem;   
-        padding: 1rem; 
+        padding: 1rem;
+    }
+
+    li:hover {
+        font-weight: bold;
     }
 
     h2 {
