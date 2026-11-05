@@ -1,4 +1,5 @@
 <script>
+    import { fade } from 'svelte/transition';
     import { onMount } from 'svelte';
     import Navbar from '../components/navbar.svelte';
     import Footbar from '../components/footbar.svelte';
@@ -63,7 +64,7 @@
     <h2 class="font-creato text-2xl font-bold">Recent Commits</h2>
         <ul class="font-creato">
             {#each commits as commit}
-                <li class=my-2>
+                <li class="font-creato" in:fade>
                     <strong>{commit.date}</strong> [<em>{commit.repoName}</em>]:
                     <a class="font-creato text-1rem" href={commit.url} target="_blank">{commit.message}</a>
                 </li>
@@ -71,10 +72,10 @@
         </ul>
     </div>
     <div>
-        <h2 class="font-creato text-2xl font-bold ">I have many repos but these are the better ones.</h2>
-        <ul>
+        <h2 class="font-creato text-2xl font-bold" in:fade>I have many repos but these are the better ones.</h2>
+        <ul in:fade >
             {#each pinnedRepos as repo}
-                <li class="font-creato">
+                <li class="font-creato" in:fade>
                     <a class="font-creato text-1rem" href={repo.url} target="_blank">{repo.name}</a>
                     {#if repo.description} - {repo.description}{/if}
                 </li>

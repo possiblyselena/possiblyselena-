@@ -1,6 +1,7 @@
 <script>
     import Polaroid from './components/polaroid.svelte';
     import Music from './components/music.svelte';
+    import Movies from './components/movies.svelte';
 </script>
 
 
@@ -12,7 +13,10 @@
     <div class="fixed left-30 top-40">
         <Music />
     </div>
-    <h2 class="font-amoria text-5xl">I currently work on events & programs at Hack Club</h2>
+    <div class="fixed right-30 top-120">
+        <Movies />
+    </div>
+    <h2 class="font-amoria text-5xl my-8">I currently work on events & programs at Hack Club</h2>
 </div>
 
 <style>
