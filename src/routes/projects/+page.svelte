@@ -59,12 +59,12 @@
 <div class="mx-2">
     <h1 class="font-amoria text-7xl">Things I'm building</h1>
 </div>
-<div class="flex m-2 gap-10 ">
+<div class="flex m-4 gap-10">
     <div>
-    <h2 class="font-creato text-2xl font-bold">Recent Commits</h2>
-        <ul class="font-creato">
+    <h2 class="font-creato text-4xl font-bold my-2">Recent Commits</h2>
+        <ul class="font-creato ">
             {#each commits as commit}
-                <li class="font-creato" in:fade>
+                <li class="font-creato text-lg" in:fade>
                     <strong>{commit.date}</strong> [<em>{commit.repoName}</em>]:
                     <a class="font-creato text-1rem" href={commit.url} target="_blank">{commit.message}</a>
                 </li>
@@ -72,10 +72,10 @@
         </ul>
     </div>
     <div>
-        <h2 class="font-creato text-2xl font-bold" in:fade>I have many repos but these are the better ones.</h2>
+        <h2 class="font-creato text-4xl font-bold my-2" in:fade>I have many repos but these are the better ones.</h2>
         <ul in:fade >
             {#each pinnedRepos as repo}
-                <li class="font-creato" in:fade>
+                <li class="font-creato text-lg" in:fade>
                     <a class="font-creato text-1rem" href={repo.url} target="_blank">{repo.name}</a>
                     {#if repo.description} - {repo.description}{/if}
                 </li>
@@ -84,42 +84,25 @@
     </div>
 </div>
 
-<div class="font-creato">
-    <h2 class="text-3xl">I use this?</h2>
-    <div class="flex flex-wrap gap-4 my-4">
-        <div>
-            <h1 class="font-bold">Front-End</h1>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Svelte</li>
-            <li>React</li>
-        </div>
-        <div>
-            <h1 class="font-bold">Back-End</h1>
-            <li>SvelteKit</li>
-            <li>Convex</li>
-            <li>Couch DB</li>
-        </div>
-        <div>
-            <h1 class="font-bold">Art & Design</h1>
-            <li>Figma</li>
-            <li>Solidworks/Onshape</li>
-        </div>
-        <div>
-            <h1 class="font-bold">Other Stuff</h1>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>Godot</li>
-        </div>
-    </div>
-</div>
-
 <div>
     <h1 class="font-amoria text-7xl m-2">What I want to build</h1>
-    <div class="font-creato mx-4">
-        <p class="text-2xl">Right now I'm really into...</p>
-        <p>Games with Godot</p>
-        <p>Funky Websites</p>
-        <p>Tiny hardware gadgets</p>
+    <div class="font-creato m-4 my-5">
+        <p class="text-3xl">Right now I'm really into...</p>
+        <div class="flex flex-col gap-4">
+            <div class="my-2">
+                <h2 class="font-creato text-2xl font-bold">Mini Games with Godot</h2>
+                <p>See my submissions for <a href="https://jamegam.hackclub.com/">Jame Gam</a> on my <a href="https://possiblyselena.itch.io/">Itch.io</a></p>
+            </div>
+            <div>
+                <h2 class="font-creato text-2xl font-bold">Funky Websites</h2>
+                <p>I've ran a program called <a href="https://urspace.hackclub.com/">Urspace!</a></p>
+            </div>
+            <div>
+                <h2 class="font-creato text-2xl font-bold">Tiny hardware gadgets</h2>
+                <p>I built <a href="https://daisychain-five.vercel.app/">Daisy Chain</a> for <a href="https://devpost.com/software/daisy-chain">Calhacks 13.0</a></p>
+            </div>
+
+        </div>
+
     </div>
 </div>
