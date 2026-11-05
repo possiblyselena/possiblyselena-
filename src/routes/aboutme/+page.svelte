@@ -1,4 +1,5 @@
 <script>
+    import {fade} from 'svelte/transition';
 
     const pastInfo = [
         {
@@ -86,8 +87,8 @@
         </div>
     </div>
     <div  class="grid grid-cols-2 mx-30 gap-x-20 gap-y-6">
-        {#each activeBullet.images as image}
-            <img src={image} class="bg-white p-3 shadow-xl even:translate-y-30" alt="Description of image"/>
+        {#each activeBullet.images as image (image)}
+            <img src={image}  in:fade class="bg-white p-3 shadow-xl even:translate-y-30" alt="Description of image"/>
         {/each}
     </div>
 </div>

@@ -9,7 +9,9 @@
 
 
     <Polaroid />
-    <Music />
+    <div class="fixed left-30 top-40">
+        <Music />
+    </div>
     <h2 class="font-amoria text-5xl">I currently work on events & programs at Hack Club</h2>
 </div>
 

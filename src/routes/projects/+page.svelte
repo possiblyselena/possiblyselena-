@@ -3,9 +3,9 @@
     import Navbar from '../components/navbar.svelte';
     import Footbar from '../components/footbar.svelte';
 
-    const maxCommitsToDisplay = 5;
+    const maxCommitsToDisplay = 3;
     let commits = $state([]);
-    let starredRepos = $state([]);
+    let pinnedRepos = $state([]);
 
     async function getRecentCommits() {
         const url = `https://api.github.com/users/possiblyselena/events/public`
@@ -39,16 +39,12 @@
         }
     }
 
-    async function getStarredRepos() {
-        const url = `https://api.github.com/users/possiblyselena/starred`
-        
+    async function getPinnedRepos() {
         try {
-            const response = await fetch(url);
-            if (!response.ok) throw new Error('Failed to fetch starred repos');
+            const response = await fetch('/api/pinned');
+            if (!response.ok) throw new Error('Failed to fetch pinned repos');
 
-            const repos = await response.json();
-            // You can store the starred repos in a state variable if needed
-            starredRepos = repos;
+            pinnedRepos = await response.json();
         } catch (error) {
             console.error(error);
         }
@@ -56,55 +52,73 @@
 
     onMount(() => {
         getRecentCommits();
-        getStarredRepos();
+        getPinnedRepos();
     });
 </script>
+<div class="mx-2">
+    <h1 class="font-amoria text-7xl">Things I'm building</h1>
+</div>
+<div class="flex m-2 gap-10 ">
+    <div>
+    <h2 class="font-creato text-2xl font-bold">Recent Commits</h2>
+        <ul class="font-creato">
+            {#each commits as commit}
+                <li class=my-2>
+                    <strong>{commit.date}</strong> [<em>{commit.repoName}</em>]:
+                    <a class="font-creato text-1rem" href={commit.url} target="_blank">{commit.message}</a>
+                </li>
+            {/each}
+        </ul>
+    </div>
+    <div>
+        <h2 class="font-creato text-2xl font-bold ">I have many repos but these are the better ones.</h2>
+        <ul>
+            {#each pinnedRepos as repo}
+                <li class="font-creato">
+                    <a class="font-creato text-1rem" href={repo.url} target="_blank">{repo.name}</a>
+                    {#if repo.description} - {repo.description}{/if}
+                </li>
+            {/each}
+        </ul>
+    </div>
+</div>
 
-<h2 class="font-creato text-5xl ">Recent Commits</h2>
-<ul>
-    {#each commits as commit}
-        <li>
-            <strong>{commit.date}</strong> [<em>{commit.repoName}</em>]:
-            <a class="font-creato text-1rem" href={commit.url} target="_blank">{commit.message}</a>
-        </li>
-    {/each}
-</ul>
-
-<div>
-    <h2>I use this?</h2>
-    <div class="flex flex-wrap gap-4">
+<div class="font-creato">
+    <h2 class="text-3xl">I use this?</h2>
+    <div class="flex flex-wrap gap-4 my-4">
         <div>
-            <h1>Front-End</h1>
-            <li>HTML</li>
+            <h1 class="font-bold">Front-End</h1>
             <li>CSS</li>
             <li>JavaScript</li>
             <li>Svelte</li>
             <li>React</li>
         </div>
         <div>
-            <h1>Back-End</h1>
+            <h1 class="font-bold">Back-End</h1>
             <li>SvelteKit</li>
             <li>Convex</li>
+            <li>Couch DB</li>
         </div>
         <div>
-            <h1>Art & Design</h1>
+            <h1 class="font-bold">Art & Design</h1>
             <li>Figma</li>
+            <li>Solidworks/Onshape</li>
         </div>
         <div>
-            <h1>Other Stuff</h1>
+            <h1 class="font-bold">Other Stuff</h1>
             <li>Git</li>
             <li>GitHub</li>
+            <li>Godot</li>
         </div>
     </div>
+</div>
 
-    <h2 class="font-creato text-5xl ">My Favourite Repos that aren't my own</h2>
-    <ul>
-        {#each starredRepos as repo}
-            <li>
-                <a class="font-creato text-1rem" href={repo.html_url} target="_blank">{repo.full_name}</a>
-            </li>
-        {/each}
-    </ul>
-    
-  
+<div>
+    <h1 class="font-amoria text-7xl m-2">What I want to build</h1>
+    <div class="font-creato mx-4">
+        <p class="text-2xl">Right now I'm really into...</p>
+        <p>Games with Godot</p>
+        <p>Funky Websites</p>
+        <p>Tiny hardware gadgets</p>
+    </div>
 </div>
