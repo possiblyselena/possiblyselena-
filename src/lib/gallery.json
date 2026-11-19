@@ -1,8 +1,29 @@
 [
     {
-        "name": "star hairclip",
+        "name": "Star Hairclip",
         "description": "A hairclip that looks like a star, made by my friend.",
         "image": "/gallery/starclip.png"
+    },
+    {
+        "name": "Ito Green tea",
+        "description": "My favourite drink of all time, first time I had it was in SF!",
+        "image": "/gallery/ito.png"
+    },
+    {
+        "name": "Pentax Camera!",
+        "description": "My film camera I found in my dad's former pawn shop.",
+        "image": "/gallery/pentaxmv.png"
+    },
+    {
+        "name": "giraffe",
+        "description": "I liked giraffes for like 2 days because I thrifted an awesome shirt.",
+        "image": "/gallery/giraffe.png"
+    },
+    {
+        "name": "loose coins",
+        "description": "I always think coins are important because what if you need to pay a parking metre?",
+        "image": "/gallery/coins.png"
     }
+
 
 ]
